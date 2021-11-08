@@ -1,0 +1,201 @@
+@font-face {
+    font-family: 'Red Hat Display', sans-serif;
+    src: url('Red_Hat_Display') format('truetype');
+}
+body{
+    background-image: url('pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #deebf3;
+}
+.ordercard{
+    align-self: center;
+    /* border: 1px solid red; */
+    width: 50%;
+    border-radius: 25px;
+    padding: 30px;
+    padding-top: 200px;
+    background-image: url("illustration-hero.svg");
+    background-repeat: no-repeat;
+    background-color: white;
+    background-size: contain;
+    width: 400px;
+    height: 500px;
+    margin: 100px auto;
+    position: relative;
+    box-shadow: 0px 20px 10px rgb(203 222 230);
+    display: flex;
+}
+.content{
+    margin-top: 5em;
+    line-height: 2em;
+    padding: 0 10px 0 10px;
+}
+.title{
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%) ;
+}
+.desc{
+    text-align: center;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+    font-family: 'Red Hat Display', sans-serif;
+    justify-items: center;
+}
+.change{
+    display: flex;
+    width: 100%;
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(225, 100%, 98%) ;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    padding: 5px 4px;
+}
+.musicicon{
+    width: 22%;
+    padding-left: 10px;
+    
+}
+.annual{
+    width: 48%;
+    padding-bottom: 10px;
+    color: hsl(223, 47%, 23%) ;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+}
+span{
+    font-size: 16px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+.changebtn{
+    padding-right: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.changebtn a{
+    color: hsl(245, 75%, 52%);
+    font-family: 'Red Hat Display', sans-serif;
+}
+.changebtn a:hover, .changebtn a:active{
+    text-decoration-color: white;
+    color: hsla(245, 75%, 52%, 80%);
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.pay{
+    background-color: hsl(245, 75%, 52%);
+    padding: 10px;
+    border-radius: 14px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 25px;
+    color: hsl(225, 100%, 98%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 0px 10px 19px rgb(203, 222, 230);
+}
+.pay:hover, .pay:active{
+    
+    background-color: hsla(245, 75%, 52%, 80%);
+}
+.cancel{
+    color: hsl(224, 23%, 55%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin-top: 8px;
+}
+.cancel:hover, .cancel:hover{
+    color: hsl(223, 47%, 23%);
+}
+
+
+@media (max-width: 965px) {
+        .ordercard{
+            width: 45%;
+            height: 40%;
+        }
+        .content{
+            width: 100%;
+        }
+}
+@media (max-width: 810px) {
+        .ordercard{
+            width: 45%;
+            height: 40%;
+        }
+        .content{
+            margin-top: 0;
+            padding: 0;
+        }
+}
+@media (max-width: 555px) {
+        .ordercard{
+            width: 50%;
+            height: 450px;
+        }
+        .content{
+            font-size: small;
+            text-align: center;
+        }
+        .musicicon img{
+            width: 35px;
+        }
+        .annual{
+            margin-left: 15px;
+            font-weight: boldl;
+        }
+        span{
+            font-size: 9px;
+            font-weight: 700;
+        }
+        .changebtn{
+            margin-left: 10px;
+        }
+}
+@media (max-width: 429px) {
+        .content{
+            margin-top: -50px;
+        }
+        span{
+            font-size: 10px;
+            font-weight: 700;
+        }
+        body{
+            max-width: fit-content;
+            background-image: url("pattern-background-mobile.svg");
+        }
+}
+@media (max-width: 285px) {
+        .content{
+            margin-top: -100%;
+            font-size: xx-small;
+        }
+        .annual{
+            margin-left: 15px;
+            font-weight: bold;
+        }
+        span{
+            font-size: 9px;
+            font-weight: 700;
+        }
+        .changebtn{
+            margin-left: 10px;
+        }
+}
